@@ -1,0 +1,591 @@
+/*
+Theme Name: wordpress developer challenge
+Author: Fla
+Author URI: https://github.com/flavialbraz
+Version:
+*/
+
+ 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s;
+}
+
+a {
+    color:#fff;
+    text-decoration: none;
+}
+ 
+body {
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Circular Spotify Tx T';
+    font-size: 1em;
+    line-height: 2;
+}
+h1 {
+    line-height: 1.1;
+}
+
+iframe {
+    width: 100%;
+    height: 700px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#wpadminbar {
+    z-index: 0! important;
+}
+
+.titulo-video {
+text-align: left;
+font: normal normal 900 30px/30px;
+letter-spacing: -0.3px;
+}
+
+.duracao-video {
+    text-align: center;
+letter-spacing: 0.54px;
+}
+
+
+.container.topo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    padding: 8px;
+}
+
+.menu a:hover {
+    color: #FF0000;
+}
+.categoriaetempo h1 {
+    text-align: left;
+    font: normal normal 900 100px/100px;
+    letter-spacing: -4px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.elementos-topo h1 {
+    text-align: left;
+    letter-spacing: -4px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 4.4em;
+}
+
+.categoriaetempo span {
+    width: 128px;
+    height: 32px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    margin-right: 7px;
+    color: #5A5A5A;
+    text-align: center;
+    display: inline-block;
+    line-height: 29px;
+}
+
+.categoriaetempo span:nth-child(2) {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+}
+
+.elementos-topo button, .error button {
+    width: 310px;
+    height: 64px;
+    background: #FF0000;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.54px;
+    font-size: 18px;
+}
+
+.elementos-topo button:hover, .error button:hover {
+    cursor: pointer;
+    background: #de1e1e;
+}
+
+.titulo-categoria h1 {
+    font-weight: 900;
+    color: #FF0000;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.container {
+    margin: auto;
+    width: 87%;
+}
+
+.imagem-video {
+    width: 230px;
+    height: 370px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.imagem-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.categorias, .duracao {
+    width: 128px;
+    height: 32px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    margin-right: 7px;
+    color: #5A5A5A;
+    text-align: center;
+    display: inline-block;
+    line-height: 32px;
+    border: 1px solid transparent;
+    margin-bottom: 15px;
+    font-size: 0.99em;
+    letter-spacing: -0.50px;
+}
+.categorias a {
+    color: #5A5A5A;
+}
+
+.duracao {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}  
+.box-video h1 {
+    letter-spacing: -0.3px;
+    font-weight: 900;
+    font-size: 24px;
+}
+ 
+.box-video {
+    margin: 0px 21px 10px 0px;
+    -ms-flex: 0 0 19.333333%;
+    flex: 0 0 19.333333%;
+    max-width: 19.333333%;
+}
+.infos-topo {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: #000000d4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    top: 1px;
+}
+.elementos-topo {
+    opacity: 1;
+    position: absolute;
+    bottom: 15em;
+    flex-wrap: wrap;
+    z-index: 11111;
+    margin-left: 6em;
+}
+ 
+.row {
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 4em;
+}
+
+.titulos h1 {
+    color: #f00;
+}
+
+.infos-topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1:hover {
+    opacity: 0.5;
+
+}
+
+ 
+
+.row-pages {
+    margin-top: 12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+ 
+
+.todos-videos {
+    -ms-flex: 0 0 54%;
+    flex: 0 0 54%;
+    max-width: 54%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.infos-pagina p {
+    width: 81%;
+    text-align: left;
+    display: block;
+}
+
+.infos-pagina span {
+    position: fixed;
+    display: block;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.row-single, .error {
+    margin-top: 12em;
+    margin-bottom: 4em;
+} 
+
+.elementos-single {
+    margin: auto;
+    width: 68%;
+}
+
+.titulos, .elementos-single {
+    margin-bottom: 1.3em;
+}
+
+.elementos-single h1 {
+    font-size: 3vw;
+    line-height: 1;
+}
+
+.footer {
+    height: 269px;
+    background: #121212 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 7em;
+    font-size: 0.91em;
+}
+
+.footer .logo img {
+    width: 82px;
+}
+
+.imagem-topo {
+    height: 1000px;
+    overflow: hidden;
+    margin-bottom: 5em;
+    position: relative;
+}
+
+
+.imagem-topo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.todos-videos .box-video {
+    margin: 9px;
+    -ms-flex: 0 0 30.088%;
+    flex: 0 0 30.088%;
+    max-width: 30.088%;
+}
+
+.todos-videos .imagem-video {
+    height: 290px;
+    width: 100%;
+}
+
+.todos-videos .box-video h1 {
+    font-size: 1.33em;
+}
+
+ 
+.slick-slide, .slick-slide h1 {
+    outline: none;
+}
+    
+.box-videos {
+    width: 100%;
+}
+ 
+.box-todos-videos {
+    margin-right: 15px;
+}
+
+.imagem-video {
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.box-videos {
+    width: 100%;
+    outline: none;
+}
+ 
+.box-videos h1 {
+    outline: none;
+    font-size: 1.36em;
+}
+
+ 
+button.slick-next.slick-arrow, button.slick-prev.slick-arrow {
+    position: absolute;
+    z-index: 111;
+    background: #00000059;
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    opacity: 0;
+} 
+button.slick-next.slick-arrow:before {content: ">";font-weight: 900;color: #ffffff87;}
+
+button.slick-prev.slick-arrow:before {content: "<";font-weight: 900;color: #ffffff87;}
+
+.contai-home:hover button.slick-next.slick-arrow, .contai-home:hover button.slick-prev.slick-arrow {
+    opacity: 1;
+    margin-top: -130px;
+}
+
+button.slick-prev.slick-arrow {
+    left: 16px;
+}
+
+button.slick-next.slick-arrow {
+    right: 35px;
+}
+
+.contai-home {
+    margin-bottom: 3em;
+    margin-left: auto;
+    width: 93%;
+}
+
+.slick-track {
+    margin-left: 0px!important;
+}
+
+.menu-cel {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #000000d1;
+    padding: 21px;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    font-size: 0.71em;
+    z-index: 11111;
+}
+
+.menu-cel a {
+    color: #fff;
+}
+ 
+.menu-cel {
+    display: none;
+}
+.slick-list.draggable {
+    margin-left: -60px;
+}
+
+.slide.slick-initialized.slick-slider {
+    overflow: hidden;
+}
+ 
+@media only screen and (max-width: 1900px) {
+    .todos-videos .imagem-video {
+        height: 400px;    }
+}
+@media only screen and (max-width: 1400px) {
+    .todos-videos .imagem-video {
+        height: 290px;
+    }
+ 
+}
+  @media only screen and (max-width: 1114px) {
+    .todos-videos .box-video {
+        -ms-flex: 0 0 45.088%;
+        flex: 0 0 44.088%;
+        max-width: 44.088%;
+    }
+    .todos-videos .imagem-video {
+        height: 335px;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .elementos-topo h1 {
+        font-size: 2.8em;
+        letter-spacing: -2px;
+        width: 94%;
+    }
+    h1 {
+        font-size: 1.5em;
+    } 
+
+    .elementos-topo {
+        bottom: 53px;
+        margin-left: 1em;
+    }
+    
+    .infos-topo {
+        display: block;
+    }
+    
+    .infos-topo .container {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.1vw;
+        height: 25px;
+    }
+    
+    .categorias, .duracao {
+        width: 111px;
+        font-size: 0.9em;
+    }
+    
+    .elementos-topo button {
+        width: 200px;
+        font-size: 3vw;
+        height: 50px;
+        margin-top: 4vw;
+    }
+    
+    .imagem-topo {
+        height: 500px;
+    }
+ 
+    .elementos-single {
+        width: 90%;
+    }
+    
+    .container {
+        width: 91%;
+    }
+     
+    .infos-pagina {
+        margin-bottom: 2em;
+    }
+    
+    .row-pages {
+        display: block;
+        width: 92%;
+        margin: auto;
+        margin-top: 12vw;
+    }
+    
+    .infos-pagina span {
+        display: block;
+        width: 95%;
+        max-width: 100%;
+        flex: 100%;
+        position: relative;
+    }
+    
+    .todos-videos {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+      .todos-videos .imagem-video {
+        height: 405px;
+    }
+    .elementos-single h1 {
+        font-size: 6.6vw;
+        line-height: 1;
+    }
+
+    iframe {
+        height: 445px;
+    }
+    .menu-cel {
+        display: flex;
+    }
+
+    .slick-list.draggable {
+        margin-left: unset;
+    }
+    
+    .slide.slick-initialized.slick-slider {
+        overflow: unset;
+    }
+    .contai-home {
+        width: 97%;
+    }
+    }
+
+  @media only screen and (max-width: 280px) {
+    .todos-videos .box-video {
+        margin: 0px;
+        margin-bottom:20px;
+        -ms-flex: 0 0 40.088%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    iframe {
+        height: 445px;
+    }
+    .box-videos h1 {
+        outline: none;
+        font-size: 0.96em;
+    }
+    .menu-cel {
+        display: flex;
+    }
+    .slick-list.draggable {
+        margin-left: unset;
+    }
+    
+    .slide.slick-initialized.slick-slider {
+        overflow: unset;
+    }
+    .titulos {
+        padding-left: 9px;
+    }
+
+    .contai-home {
+        width: 97%;
+    }
+}
+
+
+ 
